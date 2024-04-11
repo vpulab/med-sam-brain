@@ -23,7 +23,7 @@ transformer blocks.
 
 *Cite*
 
-@inproceedings{SAM,
+@inproceedings{MED-SAM-BRAIN,
 
   title={How SAM Perceives Different mp-MRI Brain Tumor Domains?},
   
