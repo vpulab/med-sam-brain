@@ -21,7 +21,7 @@ transformer blocks.
 **RELEVANT NOTE: Our code and models will be available soon...**
 
 
-***Cite:***
+### *Cite:*
 
 ```
 @inproceedings{MED-SAM-BRAIN,
