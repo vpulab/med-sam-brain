@@ -17,4 +17,4 @@ We propose to adapt the encoder by: 1) accounting for all the mp-MRI volumetric 
 We propose to modify the patch embedding layer, so that it accounts for the all the MRI modalities, allowing for a seamless integration of the information. Then, we employ LoRAs to tune Multi Layer Perceptron blocks (MLP) and Attention (Q,K,V embedding) layers of the 
 transformer blocks.
 
-**Note: Our code and models will be available soon...**
+**RELEVANT NOTE: Our code and models will be available soon...**
