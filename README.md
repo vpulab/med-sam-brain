@@ -19,3 +19,12 @@ We propose to modify the patch embedding layer, so that it accounts for the all 
 transformer blocks.
 
 **RELEVANT NOTE: Our code and models will be available soon...**
+
+
+*Cite*
+@inproceedings{SAM,
+  title={How SAM Perceives Different mp-MRI Brain Tumor Domains?},
+  author={Diana-Albelda, Cecilia and Alcover-Couso, Roberto and García-Martín, Álvaro and Bescos, Jesus},
+  booktitle=IEEE Conference Computer Vision and Pattern Recogition,
+  year={2024}
+}
