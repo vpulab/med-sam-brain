@@ -1,1 +1,1 @@
-# med-sam-brain
+SAM Adaptation for mp-MRI Brain Tumor Segmentation
