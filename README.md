@@ -27,6 +27,6 @@ transformer blocks.
 @inproceedings{MED-SAM-BRAIN,
   title = {How SAM Perceives Different mp-MRI Brain Tumor Domains?},
   author = {Diana-Albelda, Cecilia and Alcover-Couso, Roberto and García-Martín, Álvaro and Bescos, Jesus},
-  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition Workshops},
   year = {2024}}
 ```
