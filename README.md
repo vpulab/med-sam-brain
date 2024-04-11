@@ -11,7 +11,10 @@ We address in our study the primary challenge of adapting SAM for mp-MRI brain s
 We propose to adapt the encoder by: 1) accounting for all the mp-MRI volumetric image modalities; and 2) specifically tuning of the encoder to retain the open-world segmentation capabilities of SAM.
 
 *Proposed Encoder*
-[Proposed_Encoder.pdf](https://github.com/vpulab/med-sam-brain/files/14948732/Proposed_Encoder.pdf)
-We propose to modify the patch embedding layer, so that it accounts for the all the MRI modalities, allowing for a seamless integration of the information. Then, we employ LoRAs to tune Multi Layer Perceptron blocks (MLP) and Attention (Q,K,V embedding) layers of the transformer blocks.
+
+![Captura de pantalla 2024-04-11 a las 18 25 17](https://github.com/vpulab/med-sam-brain/assets/96308828/13217e7d-71ad-4398-8ff8-218aece39365)
+
+We propose to modify the patch embedding layer, so that it accounts for the all the MRI modalities, allowing for a seamless integration of the information. Then, we employ LoRAs to tune Multi Layer Perceptron blocks (MLP) and Attention (Q,K,V embedding) layers of the 
+transformer blocks.
 
 **Note: Our code and models will be available soon...**
