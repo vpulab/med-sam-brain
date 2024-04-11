@@ -24,8 +24,13 @@ transformer blocks.
 *Cite*
 
 @inproceedings{SAM,
+
   title={How SAM Perceives Different mp-MRI Brain Tumor Domains?},
+  
   author={Diana-Albelda, Cecilia and Alcover-Couso, Roberto and García-Martín, Álvaro and Bescos, Jesus},
+  
   booktitle=IEEE Conference Computer Vision and Pattern Recogition,
+  
   year={2024}
+  
 }
