@@ -31,6 +31,4 @@ transformer blocks.
   
   booktitle=IEEE Conference Computer Vision and Pattern Recogition,
   
-  year={2024}
-  
-}
+  year={2024}}
