@@ -10,6 +10,7 @@ We address in our study the primary challenge of adapting SAM for mp-MRI brain s
 
 We propose to adapt the encoder by: 1) accounting for all the mp-MRI volumetric image modalities; and 2) specifically tuning of the encoder to retain the open-world segmentation capabilities of SAM.
 
+\ 
 
 *Proposed Encoder*
 
