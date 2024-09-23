@@ -69,6 +69,11 @@ def train_sam(args, net: nn.Module, optimizer,  train_loader,
         for pack in train_loader:
             imgs = pack['image'].to(dtype = torch.float32, device = GPUdevice)
             masks = pack['label'].to(dtype = torch.float32, device = GPUdevice)
+            
+            # If not enough GPU, uncomment the following 3 lines
+            # i_slices = SelectEquiSlices(4, masks)
+            # imgs = imgs[:,:,:,:,i_slices] 
+            # masks = masks[:,:,:,:,i_slices]
 
             if 'pt' not in pack:
                 a = masks
