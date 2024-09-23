@@ -222,10 +222,12 @@ def validation_sam(args, val_loader, epoch, net: nn.Module, clean_dir=True):
         for ind, pack in enumerate(val_loader):
             imgsw = pack['image'].to(dtype = torch.float32, device = GPUdevice)# [0,:,:,:,:,:] 
             masksw = pack['label'].to(dtype = torch.float32, device = GPUdevice)# [0,:,:,:,:,:] 
-            num_slices = 4 #computational requirement
-            i_slices = [random.randint(0,masksw.shape[-1]-1) for i in range(num_slices)] 
-            imgsw = imgsw[:,:,:,:,i_slices] 
-            masksw = masksw[:,:,:,:,i_slices] 
+
+            # If not enough GPU, uncomment the following 4 lines
+            # num_slices = 4 
+            # i_slices = [random.randint(0,masksw.shape[-1]-1) for i in range(num_slices)] 
+            # imgsw = imgsw[:,:,:,:,i_slices] 
+            # masksw = masksw[:,:,:,:,i_slices] 
 
             if 'pt' not in pack:
                 imgsw, ptw, masksw = generate_click_prompt(imgsw, masksw)
