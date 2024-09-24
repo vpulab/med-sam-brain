@@ -1,6 +1,7 @@
 ### *Requirements*
-CUDA 11.8
-torch==1.13.0 ; torchaudio==0.13.0 ; torchvision==0.14.0
+CUDA version: 11.8.
+
+torch==1.13.0 ; torchaudio==0.13.0 ; torchvision==0.14.0.
 
 
 ### *Data acquisition*
@@ -29,4 +30,23 @@ git clone https://github.com/vpulab/med-sam-brain/;
 cd med-sam-brain;
 conda env create -f environment.yml;
 conda activate sam_adapt_brain;
+```
+
+### *Training & Testing*
+
+**Training**
+
+```
+python train.py -net sam -mod sam_lora -exp_name ... ./checkpoint/sam/sam_vit_b_01ec64.pth -b 1 -dataset brats -thd True  -data_path ../data -w 8 -four_chan True 
+```
+Parameter `mod` can be defined as: `sam_lora` to train LoRA blocks making SAM adapt to the medical domain; or `sam` in case you want to maintain the original SAM architecture. Parameter `four_chan` should be defined as `True` if you want to use all 4 MRI modalities; or `False` if just taking e of them to not train the Patch Embedding Layer.
+
+
+**NOTE:** In case you don`t have enough GPU to execute the training process, you can uncomment the following code lines on `function.py`, which reduces computational cost by taking 4 random slices per volume (the selected slices change each iteration).
+
+```
+# If not enough GPU, uncomment the following 3 lines (lines 73-76 and 226-230)
+# i_slices = SelectEquiSlices(4, masks)
+# imgs = imgs[:,:,:,:,i_slices] 
+# masks = masks[:,:,:,:,i_slices]
 ```
