@@ -10,15 +10,13 @@ Link: https://www.synapse.org/Synapse:syn51156910/wiki/627000
 
 The dataset folder structure should be as follows:
 
+```
 -data
-
 --brats #Adult Glioma Segmentation
-
 --brats_ssa #Subsaharan Glioma Segmentation
-
 --brats_ped #Pediatric Glioma Segmentation
-
 --brats_men #Meningioma Segmentation
+```
 
 You can download as much BraTS datasets as you want to use, but all of them should be placed inside the `data` folder following the above specified naming instructions.
 
