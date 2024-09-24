@@ -21,7 +21,7 @@ The dataset folder structure should be as follows:
 
 You can download as much BraTS datasets as you want to use, but all of them should be placed inside the `data` folder following the above specified naming instructions.
 
-### *Code & Environment*
+### *Download code & Set the environment*
 Open a terminal and execute the following commands:
 
 
