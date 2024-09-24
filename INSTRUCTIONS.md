@@ -3,7 +3,7 @@ CUDA version: 11.8.
 
 torch==1.13.0 ; torchaudio==0.13.0 ; torchvision==0.14.0.
 
-You can check the propper torch version for your CUDA version at: https://pytorch.org/get-started/previous-versions/
+You can check the propper torch version for your CUDA at: https://pytorch.org/get-started/previous-versions/
 
 
 ### *Data acquisition*
