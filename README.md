@@ -1,6 +1,6 @@
 # SAM Adaptation for mp-MRI Brain Tumor Segmentation
 
-This is the repository of our accepted CVPR-2024 paper for [DEF-AI-MIA Workshop](https://ai-medical-image-analysis.github.io/4th/). 
+This is the repository of our accepted CVPR-2024 [paper](https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/html/Diana-Albelda_How_SAM_Perceives_Different_mp-MRI_Brain_Tumor_Domains_CVPRW_2024_paper.html) for [DEF-AI-MIA Workshop](https://ai-medical-image-analysis.github.io/4th/). 
 
 This code has been developed by adapting the GitHub repo https://github.com/MedicineToken/Medical-SAM-Adapter from [Junde Wu](https://github.com/WuJunde) (thanks a lot for your amazing paper ❤️) in order to optimize the network for brain glioma segmentation. Instructions to download the data, set the environment and train the architecture can be found in the document `INSTRUCTIONS.md`.
 
