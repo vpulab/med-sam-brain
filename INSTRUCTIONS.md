@@ -39,10 +39,20 @@ conda activate sam_adapt_brain;
 ```
 python train.py -net sam -mod sam_lora -exp_name ... ./checkpoint/sam/sam_vit_b_01ec64.pth -b 1 -dataset brats -thd True  -data_path ../data -w 8 -four_chan True 
 ```
+
 Parameter `mod` can be defined as: `sam_lora` to train LoRA blocks making SAM adapt to the medical domain; or `sam` in case you want to maintain the original SAM architecture. Parameter `four_chan` should be defined as `True` if you want to use all 4 MRI modalities; or `False` if just taking e of them to not train the Patch Embedding Layer.
 
+After running the training command, `sam_vit_b_01ec64.pth` will be downloaded and stored in 'checkpoint/sam/'. The saved model parameters will be placed in the 'logs/' directory.
 
-**NOTE:** In case you don`t have enough GPU to execute the training process, you can uncomment the following code lines on `function.py`, which reduces computational cost by taking 4 random slices per volume (the selected slices change each iteration).
+**Validation**
+
+```
+python valid.py -net sam -mod sam_lora -thd True  -dataset brats -weights logs/.../Model/best_dice -sam_ckpt logs/.../Model/best_dice -mode Validation -four_chan True 
+```
+
+Parameters `weights` and `sam_ckpt` should be replaced by the directory of the saved model file in 'logs/'.
+
+**NOTE:** In case you don't have enough GPU to execute the training process, you can uncomment the following code lines on `function.py`, which reduces computational cost by taking 4 random slices per volume (the selected slices change each iteration).
 
 ```
 # If not enough GPU, uncomment the following 3 lines (lines 73-76 and 226-230)
