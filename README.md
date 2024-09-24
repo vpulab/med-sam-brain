@@ -4,6 +4,8 @@ This is the repository of our accepted CVPR-2024 paper for [DEF-AI-MIA Workshop]
 
 We address in our study the primary challenge of adapting SAM for mp-MRI brain scans, which typically encompass multiple MRI modalities not fully utilized by standard three-channel vision models. We demonstrate that leveraging all available MRI modalities achieves superior performance compared to the standard mechanism of repeating a MRI scan to fit the input embedding. Furthermore, we incorporate Parameter Efficient Fine-Tuning (PEFT) through LoRA blocks to solve the lack of SAM's medical specific knowledge.
 
+This code has been developed by adapting the GitHub repo https://github.com/MedicineToken/Medical-SAM-Adapter from @Junde Wu (thanks a lot for your amazing paper :) ) in order to optimize the network for brain glioma segmentation. Instructions to download the data, set the environment and train the architecture can be found in the document `INSTRUCTIONS.md`.
+
 ### *Pipeline Overview*
 
 ![Captura de pantalla 2024-04-11 a las 18 23 38](https://github.com/vpulab/med-sam-brain/assets/96308828/4b82d250-e471-4052-89e4-e428e2b49048)
