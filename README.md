@@ -27,7 +27,7 @@ transformer blocks.
 @inproceedings{cdiana2024med-sam-brain,
   title={How SAM Perceives Different mp-MRI Brain Tumor Domains?},
   author={Diana-Albelda, Cecilia and Alcover-Couso, Roberto and García-Martín, Álvaro and Bescos, Jesus},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
   pages={4959--4970},
   year={2024}
 }
