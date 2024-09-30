@@ -44,7 +44,7 @@ python train.py -net sam -mod sam_lora -exp_name ... -sam_ckpt ./checkpoint/sam/
 
 Parameter `mod` can be defined as: `sam_lora` to train LoRA blocks making SAM adapt to the medical domain; or `sam` in case you want to maintain the original SAM architecture. Parameter `four_chan` should be defined as `True` if you want to use all 4 MRI modalities; or `False` if just taking e of them to not train the Patch Embedding Layer. Parameter `dataset` must be defined as any of the names indicated in the 'Data acquisition' section.
 
-*NOTE*: After running the training command, 'sam_vit_b_01ec64.pth' will be downloaded and stored in 'checkpoint/sam/'. If pretrained weights are not downloaded propperly, you cand do it manually through [this link](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth). The saved model parameters will be placed in the 'logs/' directory.
+*NOTE*: After running the training command, 'sam_vit_b_01ec64.pth' will be downloaded. If pretrained weights are not downloaded propperly, you cand do it manually through [this link](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) and store it in 'checkpoint/sam/'. The saved model parameters will be placed in the 'logs/' directory.
 
 **Validation**
 
