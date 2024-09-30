@@ -42,7 +42,10 @@ conda activate sam_adapt_brain;
 python train.py -net sam -mod sam_lora -exp_name ... -sam_ckpt ./checkpoint/sam/sam_vit_b_01ec64.pth -b 1 -dataset brats -thd True  -data_path ../data -w 8 -four_chan True 
 ```
 
-Parameter `mod` can be defined as: `sam_lora` to train LoRA blocks making SAM adapt to the medical domain; or `sam` in case you want to maintain the original SAM architecture. Parameter `four_chan` should be defined as `True` if you want to use all 4 MRI modalities; or `False` if just taking e of them to not train the Patch Embedding Layer. Parameter `dataset` must be defined as any of the names indicated in the 'Data acquisition' section.
+- `mod` can be defined as: `sam_lora` to train LoRA blocks making SAM adapt to the medical domain; or `sam` in case you want to maintain the original SAM architecture. 
+- `four_chan` should be defined as `True` if you want to use all 4 MRI modalities; or `False` if just taking e of them to not train the Patch Embedding Layer. 
+- `dataset` must be defined as any of the names indicated in the 'Data acquisition' section. 
+- `exp_name` should be replaced by the desired name of the experiment.
 
 *NOTE*: After running the training command, 'sam_vit_b_01ec64.pth' will be downloaded. If pretrained weights are not downloaded propperly, you cand do it manually through [this link](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) and store it in 'checkpoint/sam/'. The saved model parameters will be placed in the 'logs/' directory.
 
@@ -52,7 +55,8 @@ Parameter `mod` can be defined as: `sam_lora` to train LoRA blocks making SAM ad
 python valid.py -net sam -mod sam_lora -thd True  -dataset brats -weights logs/.../Model/best_dice -sam_ckpt logs/.../Model/best_dice -mode Validation -four_chan True 
 ```
 
-Parameters `weights` and `sam_ckpt` should be replaced by the directory of the saved model file in 'logs/'.
+- `weights` and `sam_ckpt` should be replaced by the directory of the saved model file in 'logs/'.
+- `exp_name`should be replaced by the training experiment name.
 
 **NOTE:** In case you don't have enough GPU to execute the training process, you can uncomment the following code lines on `function.py`, which reduces computational cost by taking 4 random slices per volume (the selected slices change each iteration).
 
