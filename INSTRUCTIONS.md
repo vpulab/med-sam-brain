@@ -52,7 +52,7 @@ python train.py -net sam -mod sam_lora -exp_name ... -sam_ckpt ./checkpoint/sam/
 **Validation**
 
 ```
-python valid.py -net sam -mod sam_lora -thd True  -dataset brats -weights logs/.../Model/best_dice -sam_ckpt logs/.../Model/best_dice -mode Validation -four_chan True 
+python val.py -net sam -mod sam_lora -thd True  -dataset brats -weights logs/.../Model/best_dice -sam_ckpt logs/.../Model/best_dice -mode Validation -four_chan True 
 ```
 
 - `weights` and `sam_ckpt` should be replaced by the directory of the saved model file in 'logs/'.
