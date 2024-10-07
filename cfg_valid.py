@@ -8,7 +8,7 @@ def parse_args():
     parser.add_argument('-encoder', type=str, default='default', help='encoder type')
     parser.add_argument('-seg_net', type=str, default='transunet', help='net type')
     parser.add_argument('-mod', type=str, default='sam_lora', help='mod type:seg,cls,val_ad')
-    parser.add_argument('-exp_name', default='msa_test_isic', type=str, help='net type')
+    parser.add_argument('-exp_name', default='sam_test_brats', type=str, help='net type')
     parser.add_argument('-type', type=str, default='map', help='condition type:ave,rand,rand_map')
     parser.add_argument('-vis', type=int, default=0, help='visualization')
     parser.add_argument('-reverse', type=bool, default=False, help='adversary reverse')
