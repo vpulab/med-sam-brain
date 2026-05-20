@@ -26,13 +26,10 @@ transformer blocks.
 ### Cite:
 
 ```bibtex
-@INPROCEEDINGS{10678163,
-  author={Diana-Albelda, Cecilia and Alcover-Couso, Roberto and García-Martín, Álvaro and Bescos, Jesus},
-  booktitle={2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, 
-  title={How SAM Perceives Different mp-MRI Brain Tumor Domains?}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={4959-4970},
-  doi={10.1109/CVPRW63382.2024.00501}
+@inproceedings{diana2024sam,
+  title={How SAM perceives different mp-MRI brain tumor domains?},
+  author={Diana-Albelda, Cecilia and Alcover-Couso, Roberto and Garc{\'\i}a-Mart{\'\i}n, {\'A}lvaro and Bescos, Jesus},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4959--4970},
+  year={2024}
 }
