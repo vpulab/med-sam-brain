@@ -1,6 +1,6 @@
 # SAM Adaptation for mp-MRI Brain Tumor Segmentation
 
-> **Important Update:** The methodology presented in this paper has been significantly updated and improved. The new code and state-of-the-art model are now available at our new repository: [GBT-SAM](https://github.com/vpulab/gbt-sam). Consequently, the pre-trained model weights for this older version are no longer available. We highly encourage you to check out the new repository for the latest advancements.
+> <font color="red">**Important Update❗️:**</font> The methodology presented in this paper has been significantly updated and improved. The new code and state-of-the-art model are now available at our new repository: [GBT-SAM](https://github.com/vpulab/gbt-sam). Consequently, the pre-trained model weights for this older version are no longer available. We highly encourage you to check out the new repository for the latest advancements.
 
 This is the repository of our accepted CVPR-2024 [paper](https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/html/Diana-Albelda_How_SAM_Perceives_Different_mp-MRI_Brain_Tumor_Domains_CVPRW_2024_paper.html) for [DEF-AI-MIA Workshop](https://ai-medical-image-analysis.github.io/4th/). 
 
